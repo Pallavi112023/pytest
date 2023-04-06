@@ -4,7 +4,7 @@ pipeline {
     stage('checkout') {
       agent any
       steps {
-        git 'https://github.com/Pallavi112023'
+        git 'https://github.com/Pallavi112023/pytest'
       }
     }
 
