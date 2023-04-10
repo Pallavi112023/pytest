@@ -8,5 +8,11 @@ pipeline {
       }
     }
 
+    stage('get list') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+
   }
 }
