@@ -8,5 +8,11 @@ pipeline {
       }
     }
 
+    stage('get files') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+
   }
 }
