@@ -4,7 +4,7 @@ pipeline {
     stage('checkout') {
       agent any
       steps {
-        git 'https://github.com/Pallavi112023/pytest'
+        git(url: 'https://github.com/faraday-academy/curriculum-app', branch: 'dev')
       }
     }
 
