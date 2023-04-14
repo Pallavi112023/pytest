@@ -14,5 +14,11 @@ pipeline {
       }
     }
 
+    stage('get python version') {
+      steps {
+        sh 'python3 -V'
+      }
+    }
+
   }
 }
