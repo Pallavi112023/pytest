@@ -1,10 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('checkout') {
+    stage('get list of python package') {
       agent any
       steps {
-        git(url: 'https://github.com/faraday-academy/curriculum-app', branch: 'dev')
+        sh '''python3 -m pip -V
+python3 -m pip freeze
+'''
       }
     }
 
